@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 
 
 #Making a script which will automatically push your code to your repo
@@ -9,5 +9,15 @@ git add .
 
 git commit -m "Added your files"
 
-git remote add origin git@github.com:helloakash1701/Shell_Scripting.git
-git push 
+echo email
+
+echo "Please confirm your github id with "Y" or "N" "
+read output
+if [ output == "Y" ]
+then
+git remote add origin $email
+git push origin master 
+else
+echo " Couldn't find your mail"
+fi
+
