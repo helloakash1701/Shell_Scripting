@@ -13,7 +13,7 @@ echo "Please enter your github mail"
 
 read email
 
-echo email
+echo "$email"
 
 echo "Please confirm your github id with "Y" or "N" "
 
