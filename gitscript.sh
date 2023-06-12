@@ -18,7 +18,8 @@ echo "$email"
 echo "Please confirm your github id with "Y" or "N" "
 
 read output
-if [ output == "Y" ]
+
+if [ output = "Y" ]
 then
 git remote add origin $email
 git push origin master 
